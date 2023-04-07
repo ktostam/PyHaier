@@ -1,4 +1,3 @@
-import serial
 
 def GetCHTemp(payload):
     """
