@@ -32,7 +32,7 @@ def SetState(current,new):
         state=83
     elif new == "HT":
         state=85
-    else
+    else:
         return -1
     newstate.append(num+int(str(int(state)),16))
     newstate.append(current[1])
