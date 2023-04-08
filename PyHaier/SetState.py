@@ -40,3 +40,5 @@ def SetState(current,new):
     newstate.append(int(hex(current[3])[4:6], 16))
     newstate.append(int(hex(current[4])[4:6], 16))
     newstate.append(current[5])
+
+    return newstate
