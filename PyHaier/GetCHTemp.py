@@ -1,4 +1,3 @@
-
 def GetCHTemp(payload):
     """
     Cenral heating temperature display function
