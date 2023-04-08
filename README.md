@@ -2,6 +2,15 @@
 
 Very simple library to manipulate the basic parameters of the Haier heat pump.
 
+If you like My work and want to support me you can:
+
+[<img width="150px" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png">](https://www.buymeacoffee.com/jacekbrzozZ)
+
+Or if you from Poland:
+
+[<img width="150px" src="https://buycoffee.to/btn/buycoffeeto-btn-primary.svg">](https://buycoffee.to/jacekbrzozz)
+
+
 ## Version
 
 ### 0.1.0
@@ -104,8 +113,69 @@ You need provide **current** for SetDHWTemp function.
 
 **new** is new temperature with precision 1&deg;C
 
-## Example script
+## Example script 1
 
 ```Python
+from pymodbus.client.sync import ModbusSerialClient
 import PyHaier
+
+# Serial setting
+client = ModbusSerialClient(method = "rtu", port="/dev/ttyAMA0", stopbits=1, bytesize=8, parity='E', baudrate=9600)
+
+# connect to serial
+client.connect()
+
+#read holding registers from 101 to 106
+payload=client.read_holding_registers(101, 6, unit=17)
+state=PyHaier.GetState(payload)
+htemp=PyHaier.GetCHTemp(payload)
+dhwtemp=PyHaier.GetDHWTemp(payload)
+payload=client.read_holding_registers(201, 1, unit=17)
+mode=PyHaier.GetMode(payload)
+client.close()
+print("Pump status:\t"+state+"\nPump mode:\t"+mode+"\nWater temp:\t"+str(htemp)+"\nDHW temp:\t"+str(dhwtemp))
 ```
+### Output
+
+```shell
+$ python script.py
+Pump status:	Heat+Tank ON
+Pump mode:	silent
+Water temp:	25.0
+DHW temp:	43.0
+```
+
+## Example script 2
+
+```Python
+from pymodbus.client.sync import ModbusSerialClient
+import PyHaier
+
+# Serial setting
+client = ModbusSerialClient(method = "rtu", port="/dev/ttyAMA0", stopbits=1, bytesize=8, parity='E', baudrate=9600)
+
+# connect to serial
+client.connect()
+
+#read holding registers from 101 to 106
+payload=client.read_holding_registers(101, 6, unit=17)
+state=PyHaier.GetState(payload)
+print("Current state:\t"+state)
+new=PyHaier.SetState(payload,"CT")
+client.write_registers(101, new , unit=17)
+payload=client.read_holding_registers(101, 6, unit=17)
+state=PyHaier.GetState(payload)
+print("New state:\t"+state)
+client.close()
+```
+### Output
+
+```shell
+$ python script.py
+Current stete:	Heat+Tank ON
+New state:	Cool+Tank ON
+
+```
+## License
+
+ GNU GPL [©Jacek Brzozowski](https://github.com/ktostam)
