@@ -2,7 +2,8 @@
 
 Very simple library to manipulate the basic parameters of the Haier heat pump.
 
-If you like My work and want to support me you can:
+## Donation
+If you like My work and want to support me, you can:
 
 [<img width="150px" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png">](https://www.buymeacoffee.com/jacekbrzozZ)
 
