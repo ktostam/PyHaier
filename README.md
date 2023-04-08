@@ -69,7 +69,7 @@ Display current DHW temperature with precision 1&deg;C
 
 You need provide **payload** for GetMode function.
 **payload** is the contents of holding registers 101-106
----
+___
 ### PyHaier.SetState(current,new)
 
 Create Modbus frame to set new pump state
