@@ -1,6 +1,6 @@
 # PyHaier
 
-Very simple library to manipulate the basic parameters of the Haier heat pump.
+Very simple (for now) library to manipulate the basic parameters of the Haier heat pump.
 
 ## Donation
 If you like My work and want to support me, you can:
