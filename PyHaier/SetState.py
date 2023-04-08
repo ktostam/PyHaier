@@ -7,19 +7,15 @@ def SetState(current,new):
     :return:
     """
     newstate=[]
-    if new%2 == 0:
-        num=256
-    else:
-        num=34304
 
     if new == "off":
-        if new%2 == 1:
-            state=current[0]-1
+        if hex(current[0])[4:6]%2 == 1:
+            state=int(hex(current[0])[4:6])-1
         else:
             return -1
     elif new == "on":
-        if new%2 == 0:
-            state=current[0]+1
+        if hex(current[0])[4:6]%2 == 0:
+            state=int(hex(current[0])[4:6])+1
         else:
             return -1
     elif new == "C":
@@ -34,6 +30,11 @@ def SetState(current,new):
         state=85
     else:
         return -1
+
+    if state%2 == 0:
+        num=256
+    else:
+        num=34304
     newstate.append(num+int(str(int(state)),16))
     newstate.append(current[1])
     newstate.append(int(hex(current[2])[2:6], 16))
