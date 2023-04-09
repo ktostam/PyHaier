@@ -13,6 +13,9 @@ Or if you from Poland:
 
 
 ## Version
+### 0.1.1
+New function:
+- Get current DHW tank temperature
 
 ### 0.1.0
 Basic function:
@@ -69,6 +72,13 @@ Display current DHW temperature with precision 1&deg;C
 
 You need provide **payload** for GetMode function.
 **payload** is the contents of holding registers 101-106
+___
+### PyHaier.GetDHWCurTemp(payload)
+
+Display current DHW temperature in Tank with precision 0.1&deg;C
+
+You need provide **payload** for GetMode function.
+**payload** is the contents of holding registers 154
 ___
 ### PyHaier.SetState(current,new)
 
