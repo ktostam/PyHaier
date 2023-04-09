@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 setup(
     name='PyHaier',
     packages=find_packages(include=['PyHaier']),
-    version='0.1.1',
+    version='0.1.2',
     description='Haier heatpump modbus rtu protocol decoder library',
     author='Jacek Brzozowski ',
     author_email='jacekbrzozowski.pld@gmail.com',

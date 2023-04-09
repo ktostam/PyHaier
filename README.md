@@ -13,6 +13,10 @@ Or if you from Poland:
 
 
 ## Version
+### 0.1.2
+New function:
+- Get value of Twi and Two parameters (not 100% sure if this is OK.)
+
 ### 0.1.1
 New function:
 - Get current DHW tank temperature
@@ -77,8 +81,15 @@ ___
 
 Display current DHW temperature in Tank with precision 0.1&deg;C
 
-You need provide **payload** for GetMode function.
-**payload** is the contents of holding registers 154
+You need provide **payload** for GetDHWCurTemp function.
+**payload** is the contents of holding registers 141-156
+___
+### PyHaier.GetTwiTwo(payload)
+
+Display Twi and Two parameters with precision 0.1&deg;C, output is an array
+
+You need provide **payload** for GetTwiTwo function.
+**payload** is the contents of holding registers 141-156
 ___
 ### PyHaier.SetState(current,new)
 

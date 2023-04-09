@@ -7,3 +7,4 @@ from PyHaier.GetDHWCurTemp import GetDHWCurTemp
 from PyHaier.SetDHWTemp import SetDHWTemp
 from PyHaier.GetState import GetState
 from PyHaier.SetState import SetState
+from PyHaier.GetTwiTwo import GetTwiTwo
