@@ -149,11 +149,11 @@ client.connect()
 
 #read holding registers from 101 to 106
 payload=client.read_holding_registers(101, 6, unit=17)
-state=PyHaier.GetState(payload)
-htemp=PyHaier.GetCHTemp(payload)
-dhwtemp=PyHaier.GetDHWTemp(payload)
+state=PyHaier.GetState(payload.registers)
+htemp=PyHaier.GetCHTemp(payload.registers)
+dhwtemp=PyHaier.GetDHWTemp(payload.registers)
 payload=client.read_holding_registers(201, 1, unit=17)
-mode=PyHaier.GetMode(payload)
+mode=PyHaier.GetMode(payload.registers)
 client.close()
 print("Pump status:\t"+state+"\nPump mode:\t"+mode+"\nWater temp:\t"+str(htemp)+"\nDHW temp:\t"+str(dhwtemp))
 ```
@@ -181,12 +181,12 @@ client.connect()
 
 #read holding registers from 101 to 106
 payload=client.read_holding_registers(101, 6, unit=17)
-state=PyHaier.GetState(payload)
+state=PyHaier.GetState(payload.registers)
 print("Current state:\t"+state)
-new=PyHaier.SetState(payload,"CT")
+new=PyHaier.SetState(payload.registers,"CT")
 client.write_registers(101, new , unit=17)
 payload=client.read_holding_registers(101, 6, unit=17)
-state=PyHaier.GetState(payload)
+state=PyHaier.GetState(payload.registers)
 print("New state:\t"+state)
 client.close()
 ```
