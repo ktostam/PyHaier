@@ -11,6 +11,8 @@ Or if you from Poland:
 
 [<img width="150px" src="https://buycoffee.to/btn/buycoffeeto-btn-primary.svg">](https://buycoffee.to/jacekbrzozz)
 
+## Support
+For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
 ### 0.1.2
