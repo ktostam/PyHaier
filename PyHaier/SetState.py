@@ -9,12 +9,12 @@ def SetState(current,new):
     newstate=[]
 
     if new == "off":
-        if hex(current[0])[4:6]%2 == 1:
+        if int(hex(current[0])[4:6])%2 == 1:
             state=int(hex(current[0])[4:6])-1
         else:
             return -1
     elif new == "on":
-        if hex(current[0])[4:6]%2 == 0:
+        if int(hex(current[0])[4:6]%2) == 0:
             state=int(hex(current[0])[4:6])+1
         else:
             return -1
