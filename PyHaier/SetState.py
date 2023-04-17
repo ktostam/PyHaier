@@ -1,6 +1,6 @@
 def SetState(current,new):
     """
-    function to chance pump state
+    function to change pump state
 
     :param current:
     :param new:
