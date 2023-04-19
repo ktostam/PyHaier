@@ -7,6 +7,8 @@ def SetState(current,new):
     :return:
     """
     newstate=[]
+    if len(str(current[3])) <4 or len(str(current[0])) <4:
+        return "Error"
 
     if new == "off":
         if int(hex(current[0])[4:6])%2 == 1:

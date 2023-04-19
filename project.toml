@@ -1,0 +1,18 @@
+[project]
+name = "PyHaier"
+version = "0.1.4"
+authors = [
+  { name="Jacek Brzozowski", email="jacekbrzozowski.pld@gmail.com" },
+]
+description = "Very simple library to manipulate the basic parameters of the Haier heat pump."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ktostam/PyHaier"
+"Bug Tracker" = "https://github.com/ktostam/PyHaier/issues"
