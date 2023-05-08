@@ -15,6 +15,9 @@ Or if you from Poland:
 For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
+### 0.1.6
+- Just for pip upload
+
 ### 0.1.5
 - More error handling
 
