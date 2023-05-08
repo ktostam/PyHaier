@@ -15,6 +15,16 @@ Or if you from Poland:
 For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
+### 0.1.5
+- More error handling
+
+### 0.1.4
+- Update in error handling
+
+### 0.1.3
+New function
+- Add function to read Compressor frequency
+
 ### 0.1.2
 New function:
 - Get value of Twi and Two parameters (not 100% sure if this is OK.)
@@ -41,6 +51,12 @@ Basic function:
 However, it should work with all pumps that feature the YR-e27 remote control
 
 ## Instalation
+
+**Install from pip**
+
+```shell
+$ pip install PyHaier
+```
 
 **Install from source**
 ```shell
