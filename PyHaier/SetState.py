@@ -13,12 +13,14 @@ def SetState(current,new):
 
         if new == "off":
             if int(hex(current[0])[4:6])%2 == 1:
-                state=int(hex(current[0])[4:6])-1
+                #state=int(hex(current[0])[4:6])-1
+                state=int(100)
             else:
                 return -1
         elif new == "on":
             if int(hex(current[0])[4:6])%2 == 0:
-                state=int(hex(current[0])[4:6])+1
+                #state=int(hex(current[0])[4:6])+1
+                state=int(101)
             else:
                 return -1
         elif new == "C":
