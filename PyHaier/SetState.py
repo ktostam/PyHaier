@@ -17,7 +17,7 @@ def SetState(current,new):
             else:
                 return -1
         elif new == "on":
-            if int(hex(current[0])[4:6])%2) == 0:
+            if int(hex(current[0])[4:6])%2 == 0:
                 state=int(hex(current[0])[4:6])+1
             else:
                 return -1

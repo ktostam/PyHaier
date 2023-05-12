@@ -15,6 +15,9 @@ Or if you from Poland:
 For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
+### 0.1.8
+- fix for previous fix :D
+
 ### 0.1.7
 - fix turning on pump in SetState function
 
