@@ -2,7 +2,7 @@ def SetMode(payload):
 
     if payload == "eco":
         mode=0
-    elif payload == "silent":
+    elif payload == "quiet":
         mode=1
     elif payload == "turbo":
         mode=2

@@ -15,6 +15,9 @@ Or if you from Poland:
 For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
+### 0.2.0
+- rename 'silent' to 'quiet' in GetMode and SetMode function to be consistent with haier nomenclature
+
 ### 0.1.9
 - fix for SetState. Now turning on/off emulate "leaf" button on YR-e27
 
