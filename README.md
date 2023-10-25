@@ -15,6 +15,11 @@ Or if you from Poland:
 For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
+### 0.2.1
+- add GetCompFreq function showing current and set compressor frequency
+- add GetArchError function showing three archive errors as array
+- add GetEEVLevel function showing current EEV opening level
+
 ### 0.2.0
 - rename 'silent' to 'quiet' in GetMode and SetMode function to be consistent with haier nomenclature
 
@@ -167,6 +172,30 @@ You need provide **current** for SetDHWTemp function.
 **current** is the contents of holding registers 101-106
 
 **new** is new temperature with precision 1&deg;C
+___
+### PyHaier.GetCompFreq(payload)
+
+Display set and actual compressor frequency, output is an array
+
+You need provide **payload** for GetCompFreq function.
+**payload** is the contents of holding registers 241-261
+
+___
+### PyHaier.GetArchError(payload)
+
+Display archve error codes, output is an array
+
+You need provide **payload** for GetArchError function.
+**payload** is the contents of holding registers 241-261
+
+___
+### PyHaier.GetEEVLevel(payload)
+
+Display actual EEV opening level
+
+You need provide **payload** for GetEEVLevel function.
+**payload** is the contents of holding registers 241-261
+
 
 ## Example script 1
 
