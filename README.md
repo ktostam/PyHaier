@@ -14,7 +14,17 @@ Or if you from Poland:
 ## Support
 For support, join our Discord channel https://discord.gg/7aF38puD
 
+## Contributors
+- Daniel Mentel he found all information from functions added in 0.2.1 and 0.2.2 version
+
 ## Version
+### 0.2.2
+- add GetTdTs function showing Td and Ts parameters as array
+- add GetPdPs function showing current and set Pd parameter (for now only Pd) as array
+- add GetFanRpm function showing Fan1 and Fan2 rpm, as array
+- add GetTao function showwing ambient temperatura
+- rename GetCompFreq function to GetCompInfo and add to this function other information like temperature, voltage and current about compressor, display as array
+
 ### 0.2.1
 - add GetCompFreq function showing current and set compressor frequency
 - add GetArchError function showing three archive errors as array

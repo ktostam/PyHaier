@@ -8,6 +8,10 @@ from PyHaier.SetDHWTemp import SetDHWTemp
 from PyHaier.GetState import GetState
 from PyHaier.SetState import SetState
 from PyHaier.GetTwiTwo import GetTwiTwo
-from PyHaier.GetCompFreq import GetCompFreq
+from PyHaier.GetTdTs import GetTdTs
+from PyHaier.GetPdPs import GetPdPs
+from PyHaier.GetCompInfo import GetCompInfo
 from PyHaier.GetArchError import GetArchError
 from PyHaier.GetEEVLevel import GetEEVLevel
+from PyHaier.GetFanRpm import GetFanRpm
+from PyHaier.GetTao import GetTao

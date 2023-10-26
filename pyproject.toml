@@ -1,6 +1,6 @@
 [project]
 name = "PyHaier"
-version = "0.2.1"
+version = "0.2.2"
 authors = [
   { name="Jacek Brzozowski", email="jacekbrzozowski.pld@gmail.com" },
 ]
