@@ -12,7 +12,7 @@ Or if you from Poland:
 [<img width="150px" src="https://buycoffee.to/btn/buycoffeeto-btn-primary.svg">](https://buycoffee.to/jacekbrzozz)
 
 ## Support
-For support, join our Discord channel https://discord.gg/7aF38puD
+For support, join our Discord channel https://discord.gg/5bkY7N3h
 
 ## Contributors
 - Daniel Mentel he found all information from functions added in 0.2.1 and 0.2.2 version
