@@ -5,9 +5,12 @@ def GetPdPs(payload):
     payload - register from 241 to 261
     :return:
     """
-    pdps=[]
-    pdset = int(hex(payload[5])[4:6], 16)*2/10
-    pdact = int(hex(payload[6])[2:4], 16)*2/10
-    pdps.append(pdset)
-    pdps.append(pdact)
-    return pdps
+    if len(payload) == 22:
+        pdps=[]
+        pdset = divmod(int(hex(payload[5]), 16), 256)[1]*2/10
+        pdact = divmod(int(hex(payload[6]), 16), 256)[0]*2/10
+        pdps.append(pdset)
+        pdps.append(pdact)
+        return pdps
+    else:
+        return "Bad payload length"

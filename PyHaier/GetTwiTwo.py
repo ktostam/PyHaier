@@ -5,14 +5,15 @@ def GetTwiTwo(payload):
     TODO: need to confirm its good, Two/Twi cannot be more than 51.1°C
     :return:
     """
-    twitwo=[]
-    twiab = int(hex(payload[5])[5:6],16)
-    twoab = int(hex(payload[5])[4:5],16)
-    twib = int(hex(payload[6])[2:4],16)
-    twob = int(hex(payload[6])[4:6],16)
-
-    twi = int(hex((twiab*256) + twib), 16)/10
-    twitwo.append(twi)
-    two = int(hex((twoab * 256) + twob), 16) / 10
-    twitwo.append(two)
-    return twitwo
+    if len(payload) == 16:
+        twitwo=[]
+        twiob=[f'{divmod(int(hex(payload[5]), 16), 256)[1]:08b}'[0:4], f'{divmod(int(hex(payload[5]), 16), 256)[1]:08b}'[4:]]
+        twib=f'{divmod(int(hex(payload[6]), 16), 256)[0]:08b}'
+        twob=f'{divmod(int(hex(payload[6]), 16), 256)[1]:08b}'
+        twi = int(str(twiob[1])+str(twib), 2)/10
+        twitwo.append(twi)
+        two = int(str(twiob[0])+str(twob), 2)/10
+        twitwo.append(two)
+        return twitwo
+    else:
+        return "Bad payload length"

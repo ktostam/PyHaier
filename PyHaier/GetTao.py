@@ -5,6 +5,10 @@ def GetTao(payload):
     payload - register from 241 to 261
     :return:
     """
-    tao = int(hex(payload[12])[2:4],16)/10
-
-    return tao
+    if len(payload) == 22:
+        tao = divmod(int(hex(payload[12]), 16), 256)[1]
+        if tao > 127 :
+            tao -= 254
+        return tao/10
+    else:
+        return "Bad payload length"

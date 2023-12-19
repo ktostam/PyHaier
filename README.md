@@ -12,12 +12,42 @@ Or if you from Poland:
 [<img width="150px" src="https://buycoffee.to/btn/buycoffeeto-btn-primary.svg">](https://buycoffee.to/jacekbrzozz)
 
 ## Support
-For support, join our Discord channel https://discord.gg/5bkY7N3h
+For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Contributors
 - Daniel Mentel he found all information from functions added in 0.2.1 and 0.2.2 version
 
 ## Version
+### 0.3.1
+- new function GetThiTho by Daniel Mentel
+- fixed functions GetTao, GetTdTs, SetCHTemp
+
+### 0.3.0
+- few fixed for GetTdTs and GetPump functions
+- add error handling when frame passed to function has bad length
+
+### 0.2.9
+- one more fix
+
+### 0.2.8
+- few more fix
+
+### 0.2.7
+- one more fix
+
+### 0.2.6
+- fix function name
+
+### 0.2.5
+- add GetPump function to show if buildin pump is on or off
+- add Get3way function to show what position the 3-way valve is in
+
+### 0.2.4
+- some fixes
+
+### 0.2.3
+- use divmod
+
 ### 0.2.2
 - add GetTdTs function showing Td and Ts parameters as array
 - add GetPdPs function showing current and set Pd parameter (for now only Pd) as array

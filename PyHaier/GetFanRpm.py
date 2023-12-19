@@ -5,9 +5,12 @@ def GetFanRpm(payload):
     payload - register from 241 to 261
     :return:
     """
-    fanrpm=[]
-    fan1 = int(hex(payload[3])[4:6], 16)/2*10
-    fan2 = int(hex(payload[4])[2:4], 16)/2*10
-    fanrpm.append(fan1)
-    fanrpm.append(fan2)
-    return fanrpm
+    if len(payload) == 22:
+        fanrpm=[]
+        fan1 = divmod(int(hex(payload[3]), 16), 256)[1]/2*10
+        fan2 = divmod(int(hex(payload[4]), 16), 256)[0]/2*10
+        fanrpm.append(fan1)
+        fanrpm.append(fan2)
+        return fanrpm
+    else:
+        return "Bad payload length"
