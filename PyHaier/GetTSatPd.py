@@ -1,4 +1,4 @@
-def GetGetTSatPd(payload):
+def GetTSatPd(payload):
     """
     Thans to Daniel Mentel
     Function for displaying saturation temperatures for target and actual Pd, returned as array

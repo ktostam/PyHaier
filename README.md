@@ -18,6 +18,9 @@ For support, join our Discord channel https://discord.gg/7aF38puD
 - Daniel Mentel he found all information from functions added in 0.2.1 and 0.2.2 version
 
 ## Version
+### 0.3.4
+- new function GetTSatPd, GetTsatPs, GetEEVLevel by Daniel Mentel
+
 ### 0.3.1
 - new function GetThiTho by Daniel Mentel
 - fixed functions GetTao, GetTdTs, SetCHTemp
