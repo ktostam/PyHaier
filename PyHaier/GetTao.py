@@ -6,9 +6,12 @@ def GetTao(payload):
     :return:
     """
     if len(payload) == 22:
-        tao = divmod(int(hex(payload[12]), 16), 256)[1]
-        if tao > 127 :
-            tao -= 254
+        tao=[]
+        taomsb=f'{divmod(int(hex(payload[12]), 16), 256)[0]:08b}'[4:]
+        taolsb=f'{divmod(int(hex(payload[12]), 16), 256)[1]:08b}'
+        tao = int(str(taomsb)+str(taolsb), 2)
+        if tao > 2047 :
+            tao -= 4095
         return tao/10
     else:
         return "Bad payload length"

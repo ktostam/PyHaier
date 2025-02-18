@@ -18,3 +18,4 @@ from PyHaier.GetTao import GetTao
 from PyHaier.GetPump import GetPump
 from PyHaier.Get3way import Get3way
 from PyHaier.GetThiTho import GetThiTho
+from PyHaier.GetError import GetError
