@@ -10,8 +10,10 @@ def Get3way(payload):
             threeway = 'CH'
         elif tmp == 6 or tmp == 0:
             threeway = 'DHW'
+        elif tmp == 36:
+            threeway = 'DEFROST'
         else:
-            threeway = 'ERR'
+            threeway = str(tmp)
         return threeway
     else:
         return "Bad payload length"

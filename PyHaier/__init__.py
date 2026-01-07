@@ -9,6 +9,7 @@ from PyHaier.GetState import GetState
 from PyHaier.SetState import SetState
 from PyHaier.GetTwiTwo import GetTwiTwo
 from PyHaier.GetTdTs import GetTdTs
+from PyHaier.GetTdef import GetTdef
 from PyHaier.GetPdPs import GetPdPs
 from PyHaier.GetTSatPd import GetTSatPd
 from PyHaier.GetTSatPs import GetTSatPs

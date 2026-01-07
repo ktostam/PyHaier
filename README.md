@@ -18,6 +18,13 @@ For support, join our Discord channel https://discord.gg/7aF38puD
 - Daniel Mentel he found all information from functions added in 0.2.1 and 0.2.2 version
 
 ## Version
+### 0.3.6
+- Tdef (thanks to Daniel Mentel)
+- Defrost status
+
+### 0.3.5
+- small fixes
+
 ### 0.3.4
 - new function GetTSatPd, GetTsatPs, GetEEVLevel by Daniel Mentel
 
