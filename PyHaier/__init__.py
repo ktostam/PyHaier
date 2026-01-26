@@ -19,6 +19,8 @@ from PyHaier.GetEEVLevel import GetEEVLevel
 from PyHaier.GetFanRpm import GetFanRpm
 from PyHaier.GetTao import GetTao
 from PyHaier.GetPump import GetPump
+from PyHaier.GetHeater import GetHeater
 from PyHaier.Get3way import Get3way
 from PyHaier.GetThiTho import GetThiTho
 from PyHaier.GetError import GetError
+from PyHaier.GetFirmware import GetFirmware

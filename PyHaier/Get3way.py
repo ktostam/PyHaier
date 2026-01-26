@@ -5,15 +5,16 @@ def Get3way(payload):
     :return:
     """
     if len(payload) == 16:
-        tmp = divmod(int(hex(payload[0]), 16), 256)[0]
-        if tmp == 4:
-            threeway = 'CH'
-        elif tmp == 6 or tmp == 0:
-            threeway = 'DHW'
-        elif tmp == 36:
+        if payload[0] & 8192:
             threeway = 'DEFROST'
+        elif payload[0] & 2048:
+            threeway = 'ANTIFREEZE'
+        elif payload[0] & 512:
+            threeway='DHW'
+        elif payload[0] & 1024:
+            threeway = 'CH'
         else:
-            threeway = str(tmp)
+            threeway=str(payload[0])
         return threeway
     else:
         return "Bad payload length"

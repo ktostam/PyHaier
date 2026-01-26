@@ -18,6 +18,16 @@ For support, join our Discord channel https://discord.gg/7aF38puD
 - Daniel Mentel he found all information from functions added in 0.2.1 and 0.2.2 version
 
 ## Version
+
+### 0.3.9
+- add new 'ANTIFREEZE' status in Get3way function
+
+### 0.3.8
+- new function GetHeater to display Heater status
+
+### 0.3.7
+- new function GetFirmware to display the current firmware version
+
 ### 0.3.6
 - Tdef (thanks to Daniel Mentel)
 - Defrost status
