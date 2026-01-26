@@ -5,7 +5,7 @@ def GetHeater(payload):
     :return:
     """
     if len(payload) == 16:
-        if payload & 256:
+        if payload[3] & 256:
             heater = 'ON'
         else:
             heater = 'OFF'

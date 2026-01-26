@@ -19,6 +19,9 @@ For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
 
+### 0.4.0
+- Fix in GetHeater function
+
 ### 0.3.9
 - add new 'ANTIFREEZE' status in Get3way function
 
