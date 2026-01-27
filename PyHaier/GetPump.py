@@ -5,8 +5,7 @@ def GetPump(payload):
     :return:
     """
     if len(payload) == 16:
-        tmp = divmod(int(hex(payload[3]), 16), 256)[0]
-        if tmp != 16:
+        if payload[3] & 512:
             pump = 'ON'
         else:
             pump = 'OFF'

@@ -19,6 +19,9 @@ For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
 
+### 0.4.1
+- Fix in GetPump function
+
 ### 0.4.0
 - Fix in GetHeater function
 
