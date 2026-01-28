@@ -19,6 +19,10 @@ For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
 
+### 0.4.2
+- add GetLastError for displaying last error
+- fix GetError, now displaying active error (IMPORTANT!!! now the function takes registers 141-157 as arguments)
+
 ### 0.4.1
 - Fix in GetPump function
 

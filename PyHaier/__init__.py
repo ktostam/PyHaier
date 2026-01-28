@@ -23,4 +23,5 @@ from PyHaier.GetHeater import GetHeater
 from PyHaier.Get3way import Get3way
 from PyHaier.GetThiTho import GetThiTho
 from PyHaier.GetError import GetError
+from PyHaier.GetLastError import GetLastError
 from PyHaier.GetFirmware import GetFirmware

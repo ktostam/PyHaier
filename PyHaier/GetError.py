@@ -1,12 +1,11 @@
 def GetError(payload):
     """
-    Function for displaying archive errors 1,2,3, return as array
-    payload - register from 241 to 261
+    Function for displaying active error, return as int
+    payload - register from 141 to 157
     :return:
     """
-    if len(payload) == 22:
-        error = divmod(int(hex(payload[1]), 16), 256)[1]
-
+    if len(payload) == 16:
+        error=payload[0] & 0xFF
         return error
     else:
         return "Bad payload length"
