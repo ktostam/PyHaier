@@ -19,6 +19,12 @@ For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
 
+### 0.4.3
+- THIS VERSION IS NOT COMPATIBLE WITH OLDER VERSION.
+- few fixes
+- add SetPump and SetHeater
+- DEFROST and ANTIFREEZE status are removed from Get3way. Now are in saparete functions GetDefrost and GetAntifreeze.
+
 ### 0.4.2
 - add GetLastError for displaying last error
 - fix GetError, now displaying active error (IMPORTANT!!! now the function takes registers 141-157 as arguments)
