@@ -25,3 +25,11 @@ from PyHaier.GetThiTho import GetThiTho
 from PyHaier.GetError import GetError
 from PyHaier.GetLastError import GetLastError
 from PyHaier.GetFirmware import GetFirmware
+from PyHaier.GetAntifreeze import GetAntifreeze
+from PyHaier.GetDefrost import GetDefrost
+from PyHaier.GetTempCompensation import GetTempCompensation
+from PyHaier.SetTempCompensation import SetTempCompensation
+from PyHaier.SetDHWCompensation import SetDHWCompensation
+from PyHaier.GetDHWCompensation import GetDHWCompensation
+from PyHaier.SetPump import SetPump
+from PyHaier.SetHeater import SetHeater

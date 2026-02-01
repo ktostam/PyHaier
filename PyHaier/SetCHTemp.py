@@ -2,11 +2,11 @@
 def SetCHTemp(current,new):
     try:
         newtemp = []
-        newtemp.append(1024 + int(hex(current[0])[4:6], 16))
-        newtemp.append(int(str(hex(int(float(new) * 2)) + hex(current[1])[4:6]), 16))
-        newtemp.append(int(hex(current[2])[2:6], 16))
-        newtemp.append(int(hex(current[3])[4:6], 16))
-        newtemp.append(int(hex(current[4])[4:6], 16))
+        newtemp.append(1024 + (current[0]&255))
+        newtemp.append(int(new * 2)<<8 | (current[1]&255))
+        newtemp.append(current[2])
+        newtemp.append(current[3]&15)
+        newtemp.append(current[4]&255)
         newtemp.append(current[5])
         return newtemp
     except:
