@@ -9,7 +9,7 @@ def SetDHWCompensation(current, newcompe):
         currtemp=current[5] >>8
         compensation=30+newcompe*2
         frame.append(2048+pumpstate)
-        frame.append[1]
+        frame.append(current[1])
         frame.append(current[2])
         frame.append(current[3]&15)
         frame.append(current[4]&255)

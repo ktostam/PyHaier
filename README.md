@@ -19,6 +19,9 @@ For support, join our Discord channel https://discord.gg/7aF38puD
 
 ## Version
 
+### 0.4.4
+- Fix in SetDHWCompensation function
+
 ### 0.4.3
 - THIS VERSION IS NOT COMPATIBLE WITH OLDER VERSION.
 - few fixes
